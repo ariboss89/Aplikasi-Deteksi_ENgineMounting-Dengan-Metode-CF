@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="83817b46-fa61-470c-8c44-4ec00c3ad3a4">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="243"/>
+	<queryString>
+		<![CDATA[select *from detailriwayat]]>
+	</queryString>
+	<field name="Id" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="idriwayat" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jenismobil" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="gejala" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="keterangan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nilai" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cfold" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="84" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="555" height="76" uuid="1c802502-e746-4c57-81ac-b16222c8a822"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="38" uuid="bb9592ef-055f-41cb-b602-6627f051a8ec"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LAPORAN DETAIL DETEKSI KERUSAKAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="38" width="555" height="38" uuid="8ef950b4-cb07-4359-a861-e2b1235904af"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ENGINE MOUNTING PADA MOBIL]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="397" splitType="Stretch">
+			<image>
+				<reportElement x="86" y="21" width="458" height="252" uuid="b5551044-01a9-4bea-805c-17b08ac516e6"/>
+				<imageExpression><![CDATA["C:\\Users\\ariboss\\Documents\\NetBeansProjects\\Aplikasi_Deteksi_EngineMounting\\src\\Icon\\new-vs-broken-mount-large.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="253" y="291" width="129" height="20" uuid="fe53717e-99ab-4b28-b6dd-32b722d682ff"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID RIWAYAT	:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="253" y="323" width="129" height="20" uuid="184c0bd0-59f2-4661-b3f0-ee20dd54c205"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[JENIS MOBIL	:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="253" y="356" width="129" height="20" uuid="416f4061-93fe-4d96-8c21-ee7495fe63ec"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NAMA		:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="398" y="291" width="146" height="20" uuid="e35d5bc2-25bf-484d-b04b-f366b5807b1d"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{idriwayat}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="398" y="323" width="146" height="20" uuid="c736790d-2ced-4ba9-85c2-55f7e0fc13be"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{jenismobil}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="398" y="356" width="146" height="20" uuid="67958ee1-6905-4b5d-be08-a5bc335af3e4"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nama}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="40" splitType="Stretch">
+			<rectangle>
+				<reportElement x="14" y="20" width="530" height="20" uuid="711b34cf-8d9a-4e2d-bcad-5741ec3f26ce"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="14" y="20" width="292" height="20" uuid="fad20eb3-9f3c-4739-a639-0711015f36e4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[GEJALA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="306" y="20" width="138" height="20" uuid="a760d9a8-d21a-47f1-ae2b-cbdec1bb49f9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[KETERANGAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="444" y="20" width="100" height="20" uuid="13d47502-c5f3-48bf-ba7b-2d11fe1836fa"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CF OLD]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="21" splitType="Stretch">
+			<rectangle>
+				<reportElement x="14" y="0" width="530" height="20" uuid="72f7708c-0b93-4b39-898e-70d11a5dd890"/>
+			</rectangle>
+			<textField>
+				<reportElement x="14" y="0" width="292" height="20" uuid="e01e2fd9-3434-4070-b3e2-7f6832efa3de"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{gejala}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="306" y="0" width="138" height="20" uuid="d04b4d50-8e18-4571-8acf-d571f0d1f5be"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{keterangan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="444" y="0" width="100" height="20" uuid="90168f22-a2f3-4c06-8a17-52abac9d5288"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cfold}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

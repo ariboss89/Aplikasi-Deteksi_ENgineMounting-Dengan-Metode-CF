@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="83817b46-fa61-470c-8c44-4ec00c3ad3a4">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[select *from riwayat]]>
+	</queryString>
+	<field name="Id" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jenismobil" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jumlahgejala" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nilai" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="kesimpulan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="solusi" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="84" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="555" height="76" uuid="1c802502-e746-4c57-81ac-b16222c8a822"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="38" uuid="bb9592ef-055f-41cb-b602-6627f051a8ec"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LAPORAN HASIL DETEKSI KERUSAKAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="38" width="555" height="38" uuid="8ef950b4-cb07-4359-a861-e2b1235904af"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ENGINE MOUNTING PADA MOBIL]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="295" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="324" splitType="Stretch">
+			<rectangle>
+				<reportElement x="179" y="21" width="376" height="280" uuid="59cb63c8-fb0f-49c8-ab3d-5dbe7d0019f3"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="21" width="153" height="280" uuid="04f20a34-5b71-46a7-b507-05695da4ed47"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="12" y="34" width="127" height="20" uuid="363112b8-3c88-4706-9cf0-c080bbf06469"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[KERUSAKAN	:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="191" y="34" width="353" height="20" uuid="caba2448-7120-42c9-a47f-ba96d34122b3"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nama}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="12" y="66" width="127" height="20" uuid="017b8411-13b9-41cf-ada5-ee259f558edf"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[JENIS MOBIL	:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="191" y="66" width="353" height="20" uuid="3233d4e7-5766-4161-92c1-96f3a3a071f3"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{jenismobil}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="12" y="100" width="127" height="20" uuid="a095da6c-5019-4756-a643-4a4d3aeff300"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[JUMLAH GEJALA	:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="191" y="100" width="353" height="20" uuid="e95148be-2927-4ad2-8e46-2a9388f407bd"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{jumlahgejala}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="12" y="136" width="127" height="20" uuid="0ca4a60a-9433-4702-91f9-f5c5ee712f33"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[KESIMPULAN	:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="191" y="136" width="353" height="51" uuid="9c500ebc-5ec2-4111-a0a7-f9a09324e06e"/>
+				<textElement verticalAlignment="Top">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{kesimpulan}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="12" y="199" width="127" height="20" uuid="f5a723a2-c1bf-4107-ba89-ec28052d7083"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SOLUSI		:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="191" y="199" width="353" height="79" uuid="950d0191-f332-4f89-a040-7cf37cdf10ce"/>
+				<textElement verticalAlignment="Top">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{solusi}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="12" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
